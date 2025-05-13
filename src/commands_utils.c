@@ -6,7 +6,7 @@
 /*   By: sbenitez <sbenitez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 13:02:27 by sbenitez          #+#    #+#             */
-/*   Updated: 2025/05/13 16:10:38 by sbenitez         ###   ########.fr       */
+/*   Updated: 2025/05/13 19:32:23 by sbenitez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,8 +51,8 @@ int	ft_count_args(t_token *token)
 
 int	ft_isbuiltin(char *str)
 {
-/* 	if (!ft_strcmp(str, "echo"))
-		return (1); */
+	if (!ft_strcmp(str, "echo"))
+		return (1);
 	if (!ft_strcmp(str, "cd"))
 		return (1);
 	else if (!ft_strcmp(str, "pwd"))
