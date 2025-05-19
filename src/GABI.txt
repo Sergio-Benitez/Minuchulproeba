@@ -1,4 +1,8 @@
-- EXIT STATUS SOBRE LA MARCHA, EN CASO DE PIPES Y TAL, complejo xD
+- si meto echo mondongo\n en bash, se borra la \. En minishell no... debería??
+
+- EXPANSIÓN DE VARIABLES EN HEREDOC
+
+- arreglao creo: EXIT STATUS SOBRE LA MARCHA, EN CASO DE PIPES Y TAL, complejo xD
 
 	Ejemplos:
 --------------------------------------------------

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minishell.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gmontoro <gmontoro@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sbenitez <sbenitez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/07 17:08:56 by sbenitez          #+#    #+#             */
-/*   Updated: 2025/05/13 17:02:31 by gmontoro         ###   ########.fr       */
+/*   Updated: 2025/05/14 18:35:43 by sbenitez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -214,5 +214,8 @@ int 	exec_pwd(void);
 int		ft_isnum(char *str);
 void	free_exit(t_shell *ms);
 void	exec_exit(t_shell *ms, t_cmd *cmd);
+
+int	exec_echo(t_shell *ms, t_cmd *cmd);
+
 
 #endif

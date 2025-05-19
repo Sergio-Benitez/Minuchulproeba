@@ -6,7 +6,7 @@
 /*   By: sbenitez <sbenitez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 19:08:46 by sbenitez          #+#    #+#             */
-/*   Updated: 2025/05/13 19:21:20 by sbenitez         ###   ########.fr       */
+/*   Updated: 2025/05/14 18:35:08 by sbenitez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	execute_builtin(t_shell *ms, t_cmd *cmd)
 	if (!cmd->args[0])
         cmd->args[0] = ft_strdup("");
     if (!ft_strncmp(cmd->args[0], "echo", 5))
-        ms->last_exit_st = 1;//exec_echo(ms, cmd);
+        ms->last_exit_st = exec_echo(ms, cmd);
     else if (!ft_strncmp(cmd->args[0], "cd", 3))
         ms->last_exit_st = 1;//exec_cd(ms, cmd);
 	else if (!ft_strncmp(cmd->args[0], "pwd", 4))
